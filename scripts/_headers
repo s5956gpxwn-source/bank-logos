@@ -1,0 +1,12 @@
+# Cloudflare Pages response headers (copied to dist/ by cf-build.sh).
+# Images: the app requests ".../png/{id}.png?v={manifest version}", so a version bump = new URL.
+# Always bump "version" in banks.json when any logo changes.
+/light/*
+  Cache-Control: public, max-age=31536000, immutable
+/dark/*
+  Cache-Control: public, max-age=31536000, immutable
+/neutral/*
+  Cache-Control: public, max-age=31536000, immutable
+# Manifest: short cache so new versions reach devices within minutes.
+/banks.json
+  Cache-Control: public, max-age=300
