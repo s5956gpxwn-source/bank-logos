@@ -1,0 +1,324 @@
+{
+  "version": 1,
+  "updated": "2026-11-18",
+  "count": 25,
+  "paths": {
+    "light_png": "light/png/{id}.png",
+    "dark_png": "dark/png/{id}.png",
+    "neutral_png": "neutral/png/{id}.png",
+    "light_svg": "light/svg/{id}.svg",
+    "dark_svg": "dark/svg/{id}.svg",
+    "neutral_svg": "neutral/svg/{id}.svg"
+  },
+  "source_values": {
+    "svg": "مستخرج من ملف SVG أصلي",
+    "redrawn": "معاد رسمه من صورة"
+  },
+  "items": [
+    {
+      "id": "alinma",
+      "name": "الإنماء",
+      "color": "#002134",
+      "color_dark": "#FFFFFF",
+      "png_size": [
+        1199,
+        1200
+      ],
+      "source": "svg"
+    },
+    {
+      "id": "alrajhi",
+      "name": "الراجحي",
+      "color": "#231BFF",
+      "color_dark": "#5D58FF",
+      "png_size": [
+        1200,
+        1172
+      ],
+      "source": "svg"
+    },
+    {
+      "id": "snb",
+      "name": "الأهلي",
+      "color": "#034638",
+      "color_dark": "#FFFFFF",
+      "png_size": [
+        1200,
+        822
+      ],
+      "source": "svg",
+      "note": "الرمز قوس متدرج من #84BD00 إلى #006A52، والكود الأساسي هو لون نص الشعار الأصلي"
+    },
+    {
+      "id": "riyad-bank",
+      "name": "الرياض",
+      "color": "#230871",
+      "color_dark": "#FFFFFF",
+      "secondary_color": "#00AF9A",
+      "secondary_color_dark": "#00AF9A",
+      "png_size": [
+        1200,
+        1200
+      ],
+      "source": "svg"
+    },
+    {
+      "id": "aljazira",
+      "name": "الجزيرة",
+      "color": "#000000",
+      "color_dark": "#FFFFFF",
+      "png_size": [
+        1200,
+        967
+      ],
+      "source": "svg",
+      "note": "الملف الأصلي بدون لون فظهر أسود، ويستبدل إذا توفر اللون المعتمد"
+    },
+    {
+      "id": "saib",
+      "name": "السعودي للاستثمار",
+      "color": "#FFE300",
+      "color_dark": "#FFE300",
+      "secondary_color": "#000000",
+      "secondary_color_dark": "#FFFFFF",
+      "png_size": [
+        1088,
+        1200
+      ],
+      "source": "svg",
+      "note": "الرمز أكثره أسود، والأصفر هو اللون المميز"
+    },
+    {
+      "id": "sab",
+      "name": "الأول",
+      "color": "#FF030E",
+      "color_dark": "#FF030E",
+      "png_size": [
+        1200,
+        605
+      ],
+      "source": "svg"
+    },
+    {
+      "id": "albilad",
+      "name": "البلاد",
+      "color": "#CE0E2D",
+      "color_dark": "#CE0E2D",
+      "secondary_color": "#F5B335",
+      "secondary_color_dark": "#F5B335",
+      "png_size": [
+        1200,
+        1200
+      ],
+      "source": "svg",
+      "note": "اللونان متساويان تقريباً في المساحة"
+    },
+    {
+      "id": "bsf",
+      "name": "السعودي الفرنسي",
+      "color": "#002A30",
+      "color_dark": "#FFFFFF",
+      "png_size": [
+        1042,
+        1200
+      ],
+      "source": "svg"
+    },
+    {
+      "id": "anb",
+      "name": "العربي",
+      "color": "#0073CF",
+      "color_dark": "#0073CF",
+      "png_size": [
+        1200,
+        499
+      ],
+      "source": "svg",
+      "note": "الشعار نصي فبقي كاملاً"
+    },
+    {
+      "id": "meem",
+      "name": "ميم",
+      "color": "#50059B",
+      "color_dark": "#905FE9",
+      "png_size": [
+        799,
+        1200
+      ],
+      "source": "redrawn"
+    },
+    {
+      "id": "stc-bank",
+      "name": "STC bank",
+      "color": "#470884",
+      "color_dark": "#8F63DA",
+      "secondary_color": "#03BB86",
+      "secondary_color_dark": "#03BB86",
+      "png_size": [
+        1200,
+        303
+      ],
+      "source": "svg",
+      "note": "الشعار نصي فبقي كاملاً"
+    },
+    {
+      "id": "d360",
+      "name": "D360",
+      "color": "#DA6C54",
+      "color_dark": "#DA6C54",
+      "png_size": [
+        1195,
+        1200
+      ],
+      "source": "svg"
+    },
+    {
+      "id": "vision-bank",
+      "name": "فيجن",
+      "color": "#1C1E4F",
+      "color_dark": "#FFFFFF",
+      "png_size": [
+        1200,
+        1021
+      ],
+      "source": "svg"
+    },
+    {
+      "id": "urpay",
+      "name": "urpay",
+      "color": "#2359FF",
+      "color_dark": "#2359FF",
+      "png_size": [
+        923,
+        1200
+      ],
+      "source": "svg"
+    },
+    {
+      "id": "alinma-pay",
+      "name": "alinma pay",
+      "color": "#01BAFE",
+      "color_dark": "#01BAFE",
+      "secondary_color": "#CAA7FF",
+      "secondary_color_dark": "#CAA7FF",
+      "png_size": [
+        1199,
+        1200
+      ],
+      "source": "redrawn",
+      "note": "مربع بتدرج من #01BAFE إلى #CAA7FF والباب أبيض، حسب الشعار المعتمد، والإطار من ملف الإنماء الأصلي"
+    },
+    {
+      "id": "mobily-pay",
+      "name": "mobily pay",
+      "color": "#4AF5FF",
+      "color_dark": "#4AF5FF",
+      "png_size": [
+        1200,
+        388
+      ],
+      "source": "redrawn",
+      "note": "بقيت كلمة Pay للتمييز عن شعار موبايلي"
+    },
+    {
+      "id": "barq",
+      "name": "برق",
+      "color": "#000000",
+      "color_dark": "#FFFFFF",
+      "png_size": [
+        715,
+        1200
+      ],
+      "source": "redrawn",
+      "note": "الرمز أبيض في الأصل، ولوّن بلون خلفيته"
+    },
+    {
+      "id": "tikmo",
+      "name": "تيكمو",
+      "color": "#398FCD",
+      "color_dark": "#398FCD",
+      "secondary_color": "#F16A49",
+      "secondary_color_dark": "#F16A49",
+      "png_size": [
+        1059,
+        1200
+      ],
+      "source": "redrawn"
+    },
+    {
+      "id": "neo",
+      "name": "نيو",
+      "color": "#00F0FF",
+      "color_dark": "#00F0FF",
+      "png_size": [
+        1114,
+        1200
+      ],
+      "source": "redrawn",
+      "note": "مأخوذ من النسخة الداكنة، وكل ذراع بدرجته"
+    },
+    {
+      "id": "neera",
+      "name": "نيرا",
+      "color": "#FF523C",
+      "color_dark": "#FF523C",
+      "png_size": [
+        1200,
+        1200
+      ],
+      "source": "redrawn",
+      "note": "الرمز أبيض في الأصل، ولوّن بلون خلفيته"
+    },
+    {
+      "id": "enjaz",
+      "name": "انجاز",
+      "color": "#BB2E2C",
+      "color_dark": "#D74A44",
+      "secondary_color": "#ECB845",
+      "secondary_color_dark": "#ECB845",
+      "png_size": [
+        1162,
+        1200
+      ],
+      "source": "svg",
+      "note": "اللونان متساويان تقريباً في المساحة"
+    },
+    {
+      "id": "tweeq",
+      "name": "طويق",
+      "color": "#ED7D30",
+      "color_dark": "#ED7D30",
+      "png_size": [
+        1200,
+        723
+      ],
+      "source": "svg"
+    },
+    {
+      "id": "riyad-pay",
+      "name": "Riyad Pay",
+      "color": "#240870",
+      "color_dark": "#FFFFFF",
+      "secondary_color": "#7858FC",
+      "secondary_color_dark": "#7858FC",
+      "png_size": [
+        1005,
+        1200
+      ],
+      "source": "redrawn"
+    },
+    {
+      "id": "loop",
+      "name": "لووب",
+      "color": "#483371",
+      "color_dark": "#FFFFFF",
+      "png_size": [
+        1200,
+        1000
+      ],
+      "source": "redrawn",
+      "note": "الشعار نصي فبقي كاملاً، وكان أبيض ولوّن بلون خلفيته"
+    }
+  ],
+  "neutral_color": "#FFFFFF"
+}
