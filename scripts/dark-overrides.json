@@ -1,5 +1,6 @@
 {
   "alrajhi": { "#231BFF": "#5D58FF" },
   "stc-bank": { "#470884": "lighten" },
+  "alinma-pay": { "#FFFFFF": "none" },
   "loop": { "#483371": "#FFFFFF" }
 }

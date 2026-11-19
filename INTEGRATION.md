@@ -9,13 +9,13 @@ the iOS 17 SDK in both Swift 5 and Swift 6 mode.
 
 | Repo | Manifest | Content |
 | --- | --- | --- |
-| [`s5956gpxwn-source/bank-logos`](https://github.com/s5956gpxwn-source/bank-logos) | `banks.json` | 25 banks and wallets (live, tag `v1`) |
+| [`s5956gpxwn-source/bank-logos`](https://github.com/s5956gpxwn-source/bank-logos) | `banks.json` | 25 banks and wallets (live, latest tag `v2`) |
 | `s5956gpxwn-source/store-logos` | `stores.json` | stores (same layout, not created yet) |
 
 Live URLs, for example:
 
 - Manifest: `https://cdn.jsdelivr.net/gh/s5956gpxwn-source/bank-logos@main/banks.json`
-- Image: `https://cdn.jsdelivr.net/gh/s5956gpxwn-source/bank-logos@v1/dark/png/alrajhi.png`
+- Image: `https://cdn.jsdelivr.net/gh/s5956gpxwn-source/bank-logos@v2/dark/png/alrajhi.png`
 
 Both repos use the same layout, so the same code serves both:
 
@@ -136,7 +136,8 @@ Dark and neutral variants are generated, not drawn by hand. On a Mac, run
   - A color that already has at least 3:1 contrast on `#1C1C1E` is kept.
   - Any other color is lightened with its hue kept until it reaches 4:1 contrast.
   - Manual exceptions live in `scripts/dark-overrides.json`. The value `"lighten"` forces the
-    lightening rule where white would apply; the owner preferred this for STC.
+    lightening rule where white would apply; the owner preferred this for STC. The value `"none"`
+    drops a fill so the shape becomes a see-through cutout; alinma pay's door uses this in dark.
 - Neutral:
   - Everything becomes white `#FFFFFF`, and the secondary-color parts get 45% opacity.
   - White parts become knockouts, and gradients become flat.

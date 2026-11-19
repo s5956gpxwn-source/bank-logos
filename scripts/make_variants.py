@@ -7,8 +7,9 @@ DARK rules (same for every logo, so new ones stay consistent):
   1. A color with OKLCH lightness < 0.36 ("dark ink": navy, black, deep purple) becomes white.
   2. A color that already has >= 3:1 contrast on #1C1C1E is kept as is.
   3. Anything in between is lightened in OKLCH (hue kept) until it reaches 4:1 on #1C1C1E.
-  4. scripts/dark-overrides.json wins: {"<id>": {"#OLD": "#NEW" | "lighten"}}
-     ("lighten" = apply rule 3 even where rule 1 would give white).
+  4. scripts/dark-overrides.json wins: {"<id>": {"#OLD": "#NEW" | "lighten" | "none"}}
+     ("lighten" = apply rule 3 even where rule 1 would give white;
+      "none" = drop that fill so the shape becomes a see-through cutout).
 
 NEUTRAL rules (one white, for dark backgrounds only; can be tinted as a template image):
   - Every color becomes NEUTRAL. Parts in the secondary color (closest to `secondary_color`)
@@ -123,7 +124,8 @@ def make_dark(svg, item, ov):
         old = norm(old)
         if old not in mapping:
             o = ov.get(old)
-            mapping[old] = lighten(old) if o == 'LIGHTEN' else (o or to_dark(old))
+            mapping[old] = (lighten(old) if o == 'LIGHTEN' else 'none' if o == 'NONE'
+                            else (o or to_dark(old)))
         return mapping[old]
 
     dark = add_root_fill(HEX.sub(lambda m: pick(m.group(0)), svg), pick('#000000'))
@@ -179,7 +181,8 @@ def main():
     for item in manifest['items']:
         iid = item['id']
         svg = open(f'light/svg/{iid}.svg', encoding='utf-8').read()
-        dov = {norm(k): (v.upper() if v.lower() == 'lighten' else norm(v)) for k, v in dark_ov.get(iid, {}).items()}
+        dov = {norm(k): (v.upper() if v.lower() in ('lighten', 'none') else norm(v))
+               for k, v in dark_ov.get(iid, {}).items()}
         nov = {norm(k): v for k, v in neutral_ov.get(iid, {}).items()}
         dark, changed = make_dark(svg, item, dov)
         open(f'dark/svg/{iid}.svg', 'w', encoding='utf-8').write(dark)
